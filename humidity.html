@@ -22,13 +22,11 @@
         An explanation of the project.
         Links to each visualizations page. -->
 
-
 <body>
 
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <div class="p-3 mb-2 bg-info text-white"> Latitude </div>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -55,10 +53,10 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./compare.html"> Comparison </a>
+            <a class="nav-link" href="compare.html"> Comparison </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./data.html"> Data </a>
+            <a class="nav-link" href="data.html"> Data </a>
           </li>
           <!-- <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -75,64 +73,22 @@
   </div>
 
   <div class="row">
-    <div class="col-md-7">
 
-      <div class="container">
-        <div class="jumbotron">
-          <h1 class="display-4">Summary: Latitude vs X</h1>
-          <hr class="my-4">
-          <div class="box">
-          <img src="./output_data/Lat_vs_MaxTemp.png" alt="Latitude vs. Max Temperature" height="280" width="280" align="left">
-              
-          <p class="category">The objective of this project is to analyze how weather pattern changes as we go closer to the equater. In order to achieve this, we use data from the OpenWeatherMapAPI to create the dataframe for 500 cities.
-          </p>
-          <p class="category">Once we have the dataframe then we use Matplotlib to plot the data based on lattitude vs temperature, cloudiness, windspeed, and humidity. In this exercise, we have created a visualization dashboard website using the visualizations and displyed a visual comparison of our analysis.
-          </p>
-
-          </div>
-        </div>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Latitude vs Humidity</h1>
+        <hr class="my-4">
+        <p class="category"> It is evident from this analysis plot that there is not much direct relationship between latitude and humidity. It is interesting to see that most of the cities are based in area where have higher humidity over 60%. These areas areas provide better weather condition for living. More importantly, it provides basic amenities of life, like, water supply, food supplies, green resources, agriculture lands, livestocks, rivers, lakes, etc. It is interesting to see that there very limited number of cities located in area with lower humidity (below 20 degree latitude). Those areas (below 20 deg) are not much livable due to very low humidity.
+        </p>
+            <!-- <hr class="my-4"> -->
+            <div class="thumbnail">
+              <img src='output_data/Lat_vs_Humidity.png' alt="..." class="img-thumbnail">
+            </div>
+            
       </div>
     </div>
 
-    <div class="col-md-5">
 
-      <div class="container">
-        <div class="jumbotron">
-
-          <h1 class="display-4">Visualizations </h1>
-          
-          <div class="row">
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <a href="./maxtemperature.html"><img src="./output_data/Lat_vs_MaxTemp.png" alt="Latitude vs. Max Temperature" height="160" width="160"></a>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <a href="./humidity.html"><img src="./output_data/Lat_vs_Humidity.png" alt="Latitude vs. Humidity" height="160" width="160"></a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <a href="./cloudiness.html"><img src="./output_data/Lat_vs_Cloudiness.png" alt="Latitude vs. Cloudiness" height="160" width="160"></a>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <a href="./windspeed.html"><img src="./output_data/Lat_vs_WindSpeed.png" alt="Latitude vs. Wind Speed" height="160" width="160"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
   <!-- </div> -->
 

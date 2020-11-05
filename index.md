@@ -1,112 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
 
-    <title>Latitude Page</title>
-    <!-- Meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="style.css">
 
-    <!-- This is Bootstrap main CSS     -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Using Animation library for notifications   -->
-    <link href="assets/css/animate.min.css" rel="stylesheet"/>
-    <!--     Using Fonts and icons css    -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+</head>
 
-</head>   
+<!-- A landing page containing:
+        An explanation of the project.
+        Links to each visualizations page. -->
+
+
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="./landing.html"><span class="latitude">Latitude</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls=" navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Plots
-                            <span class="caret"></span></button> 
-                            <ul class="dropdown-menu">
-                                <li><a href="./visualization-image-1.html">Latitude vs. Max Temperature</a></li>
-                                <li><a href="./visualization-image-2.html">Latitude vs. Humidity</a></li>
-                                <li><a href="./visualization-image-3.html">Latitude vs. Cloudiness</a></li>
-                                <li><a href="./visualization-image-4.html">Latitude vs. Wind Speed</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./Comparisons.html"><span class="c-d">Comparison</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./Data.html"><span class="c-d">Data</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        
-        <div class="content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12 col-md-8">
-                        <div class="box">
-                            <div class="page-header">
-                                <h1 class="title">Summary: Latitude vs. X</h1>
-                            </div>
-                            <div class="box">
-                                <img src="./output_data/Fig1.png" alt="Latitude vs. Max Temperature" height="280" width="280" align="left">
-                                <p class="category">The objective of this project is to analyze how weather pattern changes as we go closer to the equater. In order to achieve this, we use data from the OpenWeatherMapAPI to to create the dataframe for 500 cities.
-                                </p>
-                                <p class="category">Once we have the dataframe then we use Matplotlib to plot the data based on lattitude vs temperature, cloudiness, windspeed, and humidity. In this exercise, we have created a visualization dashboard website using the visualizations and displyed a visual comparison of of our analysis.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-sm-12 col-md-4">
-                        <div class="box">
-                            <div class="page-header">
-                                <h1 class="title">Visualizations</h1>
-                            </div>
-                            <div class="box">
-                               <a href="./visualization-image-1.html"><img src="./output_data/Fig1.png" alt="Latitude vs. Max Temperature" height="160" width="160"></a>
-                               <a href="./visualization-image-2.html"><img src="./output_data/Fig2.png" alt="Latitude vs. Humidity" height="160" width="160"></a>
-                               <a href="./visualization-image-3.html"><img src="./output_data/Fig3.png" alt="Latitude vs. Cloudiness" height="160" width="160"></a>
-                               <a href="./visualization-image-4.html"><img src="./output_data/Fig4.png" alt="Latitude vs. Wind Speed" height="160" width="160"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <a class="navbar-brand" href="#">
+        <div class="p-3 mb-2 bg-info text-white"> Latitude </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+            Plots
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="maxtemperature.html">Lat vs Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Lat vs Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Lat vs Cloudiness</a>
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item" href="windspeed.html">Lat vs Wind Speed</a>
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./compare.html"> Comparison </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./data.html"> Data </a>
+          </li>
+          <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+        </ul>
+
+        <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+
+      </div>
+    </nav>
+  </div>
+
+  <div class="row">
+    <div class="col-md-7">
+
+      <div class="container">
+        <div class="jumbotron">
+          <h1 class="display-4">Summary: Latitude vs X</h1>
+          <hr class="my-4">
+          <div class="box">
+          <img src="./output_data/Lat_vs_MaxTemp.png" alt="Latitude vs. Max Temperature" height="280" width="280" align="left">
+              
+          <p class="category">The objective of this project is to analyze how weather pattern changes as we go closer to the equater. In order to achieve this, we use data from the OpenWeatherMapAPI to create the dataframe for 500 cities.
+          </p>
+          <p class="category">Once we have the dataframe then we use Matplotlib to plot the data based on lattitude vs temperature, cloudiness, windspeed, and humidity. In this exercise, we have created a visualization dashboard website using the visualizations and displyed a visual comparison of our analysis.
+          </p>
+
+          </div>
         </div>
+      </div>
     </div>
+
+    <div class="col-md-5">
+
+      <div class="container">
+        <div class="jumbotron">
+
+          <h1 class="display-4">Visualizations </h1>
+          
+          <div class="row">
+              <div class="col-md-6">
+                <div class="thumbnail">
+                  <a href="./maxtemperature.html"><img src="./output_data/Lat_vs_MaxTemp.png" alt="Latitude vs. Max Temperature" height="160" width="160"></a>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="thumbnail">
+                  <a href="./humidity.html"><img src="./output_data/Lat_vs_Humidity.png" alt="Latitude vs. Humidity" height="160" width="160"></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+
+              <div class="col-md-6">
+                <div class="thumbnail">
+                  <a href="./cloudiness.html"><img src="./output_data/Lat_vs_Cloudiness.png" alt="Latitude vs. Cloudiness" height="160" width="160"></a>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="thumbnail">
+                  <a href="./windspeed.html"><img src="./output_data/Lat_vs_WindSpeed.png" alt="Latitude vs. Wind Speed" height="160" width="160"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+
 </body>
-        <!--   Using JS Files   -->
-    <script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
-    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-
-    <!--  Using Charts Plugin JS -->
-    <script src="assets/js/chartist.min.js"></script>
-
-    <!--  Using Notifications Plugin    -->
-    <script src="assets/js/bootstrap-notify.js"></script>
-
-    <!--  Using Google Maps Plugin    -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 
 </html>
-
-
-          
